@@ -1,0 +1,152 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* common css */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 240, 240);
+}
+/* .half-width{
+    width: 50%;
+} */
+img{
+    width: 100%;
+}
+
+/* header section */
+header{
+    margin: 0;
+    padding: 0;
+    background-color: #2D25A0;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* flex-direction: column; */
+    padding: 80px 0;
+    /* align-items: center; */
+}
+
+.banner-info {
+    /* margin-top: -15px; */
+}
+.banner-info h1{
+    font-size: 64px;
+    color: #fff;
+}
+.banner-info .watch-btn{
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: #fff;
+    padding: 10px 30px;
+    border: 0;
+    font-size: 18px;
+    
+}
+.banner-img img {
+    width: 100%;
+    transition: transform 2s ease-in-out;
+    /* width: 100%;
+    margin-top: 20px; */ 
+}
+.bn-img:hover{
+    transform: rotate(360deg);
+}
+/* main section css */
+.players{
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    /* background-color: #fff; */
+}
+.player{
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 5px 10px 8px #888;
+}
+.player h3{
+    color: #0A0826;
+}
+.player p{
+    color: #6C6C6C;
+}
+
+/* Highlights section */
+#highlights h1{
+    color: #0A0826;
+}
+
+/* gallery section  */
+.gallery{
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    gap: 30px;
+}
+.gallery-h1{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+   
+}
+
+/* footer  */
+footer{
+    width: 100%;
+    margin: 50px 0 100px;
+    text-align: center;
+}
+.f-logo img{
+    width: 20%;
+}
+.social-icon a{
+    color: gray;
+    /* background-color: lightgray;
+    border-radius: 50%; */
+    font-size: 30px;
+    padding: 5px;
+}
+.copyright{
+    font-size: 20px;
+}
+
+/* Media query */
+
+/* Extra small devices (phones) */
+@media screen and (max-width : 600px){
+    .banner, .players{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .banner-info h1, #highlights h1{
+        font-size: 40px;
+    }
+    .banner{
+        padding: 40px 0;
+    }
+    .banner-img img{
+        width: 100%;
+        margin-top: 40px;
+        display: block;
+    }
+    .gallery{
+        grid-template-columns: repeat( 2, 1fr);
+    }
+    .gallery-h1{
+        font-size: 30px;
+    }
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    .banner-info h1{
+        margin: 0 ;
+    }
+}
+
